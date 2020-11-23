@@ -96,17 +96,9 @@ NDIR センサー種別の欄に () 付きで記入したものは、
 </tr>
 </tbody>
 </table>
-<div class="section" id="co2-min">
-<h3>カスタム CO2-min のデータ保存について<a class="headerlink" href="#co2-min" title="Permalink to this headline">¶</a></h3>
-<p>CO2-mini(カスタム社)のPC連携機能は、メーカーが保障するものではないので、データ保存なしに分類している。
-最近プロトコルが変更になり、海外製品用のソフトが使えないとの情報もあるが <a class="reference internal" href="#ref-5" id="id3"><span>[Ref:5]</span></a> 、
-co2meter.com の WEB page には、新/旧2種類のソフトが存在するので、どちらかが使えるものと思われる。
-PC を24時間動かして CO2-mini を接続したまま計測するなら、とても
-使い勝手が良いです。詳しは別記事 [<a class="reference internal" href="co2mini.html#co2mini"><span class="std std-ref">CO2-miini(カスタム社) とパソコンと連携</span></a>] を参照のこと 。</p>
 </div>
-</div>
-<div class="section" id="id4">
-<h2>データ保存あり　(PC/スマホとの連携あり)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>データ保存あり　(PC/スマホとの連携あり)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-given docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -232,10 +224,20 @@ PC を24時間動かして CO2-mini を接続したまま計測するなら、�
 <h2>MOX 方式の機種を除外した理由<a class="headerlink" href="#mox" title="Permalink to this headline">¶</a></h2>
 <p>安価な CO2 モニターは、MOXガスセンサーを使用しているものがあります。MOX
 ガスセンサーにもいくつか種類がありますが、CO2 の増減と傾向が似ている程度
-の出力しか得られないものが多そうです <a class="reference internal" href="#ref-3" id="id5"><span>[Ref:3]</span></a> 。また、アルコールなどにも
-反応してしまうため <a class="reference internal" href="#ref-4" id="id6"><span>[Ref:4]</span></a> 、病院などでの利用には適しません。お店の入り
+の出力しか得られないものが多そうです <a class="reference internal" href="#ref-3" id="id4"><span>[Ref:3]</span></a> 。また、アルコールなどにも
+反応してしまうため <a class="reference internal" href="#ref-4" id="id5"><span>[Ref:4]</span></a> 、病院などでの利用には適しません。お店の入り
 口でアルコール消毒をするところも多いので、それにも反応しそうです。酒場や
 香水にも反応しそうです。こういった理由から、CO2 の計測には不向きです。</p>
+</div>
+<div class="section" id="co2-mini">
+<h2>CO2-mini(カスタム社) のデータ保存について<a class="headerlink" href="#co2-mini" title="Permalink to this headline">¶</a></h2>
+<p>CO2-mini(カスタム社)のPC連携機能は、メーカーが保障するものではないため、
+上の表ではデータ保存なしに分類しています。最近プロトコルが変更になって、
+海外製品用のソフトが使えないとの情報もありますが <a class="reference internal" href="#ref-5" id="id6"><span>[Ref:5]</span></a> 、co2meter.com
+の WEB page には、新/旧2種類のソフトが存在するので、どちらかが使えるもの
+と思われます。PC を24時間動かして CO2-mini を接続したまま計測するなら、
+とても使い勝手が良いです。詳しは別記事 [<a class="reference internal" href="co2mini.html#co2mini"><span class="std std-ref">CO2-miini(カスタム社) とパソコンと連携</span></a>] を参照してくださ
+い 。</p>
 </div>
 <div class="section" id="id7">
 <h2>参考<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
@@ -248,15 +250,15 @@ CO2モニターの他にも、空気感染に関連した情報がたくさん�
 <dd><p><a class="reference external" href="https://togetter.com/li/1597808">コロナ対策・換気視覚化用CO2モニター</a>
 CO2モニター比較の表</p>
 </dd>
-<dt class="label" id="ref-3"><span class="brackets"><a class="fn-backref" href="#id5">Ref:3</a></span></dt>
+<dt class="label" id="ref-3"><span class="brackets"><a class="fn-backref" href="#id4">Ref:3</a></span></dt>
 <dd><p><a class="reference external" href="https://ambidata.io/samples/temphumid/airqualitysensors/">CO2センサー、空気品質センサーの測定値を比較する</a>
 NDIR方式(MH-Z19B, S-300L-V3) と MOXガスセンサー(BME680, CCS811) で計測値を比較。</p>
 </dd>
-<dt class="label" id="ref-4"><span class="brackets"><a class="fn-backref" href="#id6">Ref:4</a></span></dt>
+<dt class="label" id="ref-4"><span class="brackets"><a class="fn-backref" href="#id5">Ref:4</a></span></dt>
 <dd><p><a class="reference external" href="https://twitter.com/AirborneKanki/status/1295710465285332993">CO2センサー実測比較 連続ツイート by Airbone空気感染. CO2 lt 800ppm. 換気 gt 6回/時(&#64;AirborneKanki) さん</a>
 色々な条件で 3 機種使って同時に計測した結果。</p>
 </dd>
-<dt class="label" id="ref-5"><span class="brackets"><a class="fn-backref" href="#id3">Ref:5</a></span></dt>
+<dt class="label" id="ref-5"><span class="brackets"><a class="fn-backref" href="#id6">Ref:5</a></span></dt>
 <dd><p><a class="reference external" href="https://donadona.hatenablog.jp/entry/2020/10/19/023049">CO2-miniの通信が暗号化解除されていた (2020-10-19) by donadona さん</a>
 暗号化解除に対応したデータ取得ソフトも公開されている。</p>
 </dd>
