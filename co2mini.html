@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>CO2-miini(カスタム社) とパソコンと連携 &#8212; CO2 Monitor/Logger  documentation</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CO2 モニター/ロガー (NDIR 方式)" href="co2mon.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="co2mon.html" title="CO2 モニター/ロガー (NDIR 方式)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="co2-miini">
+<h1>CO2-miini(カスタム社) とパソコンと連携<a class="headerlink" href="#co2-miini" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>注意事項<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>CO2-mini は、パソコンとの連携(グラフ表示やデータ記録)に対応した製品ではありません。</p>
+<p>ここに示した情報は、メーカー保障の範囲外であることにご注意ください。</p>
+<p>(情報は 2020/11/23 調べ)</p>
+</div>
+<div class="section" id="id2">
+<h2>パソコン用ソフトの所在<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>CO2-mini は、パソコンとの連携(グラフ表示やデータ記録)に対応した製品ではありませんが、
+中味が同じ海外製品用のソフトウェアを利用できることが知られています <a class="reference internal" href="#ref-20" id="id3"><span>[Ref:20]</span></a> 。</p>
+<p>CO2METER.COM 社のページ
+<a class="reference external" href="https://www.co2meter.com/products/co2mini-co2-indoor-air-quality-monitor">[ここ]</a>
+を見に行くと、パソコン(Windows)用のソフトウェアが2種類見つかります。
+先日(2020/11/20)、モノタロウで購入した CO2-mini は、新版で動作しました。
+新版で動作しない場合は、旧版を試してみてください。</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>版</p></th>
+<th class="head"><p>場所</p></th>
+<th class="head"><p>GZ.exe タイムタグ</p></th>
+<th class="head"><p>備考</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>新版</p></td>
+<td><p>Overview タブ 中ほど Free Software</p></td>
+<td><p>2019/09/05</p></td>
+<td><p>ZyAura 社のページに飛ぶので、ZGm053U 用のソフトとマニュアル(pdf)をダウンロードします。</p></td>
+</tr>
+<tr class="row-odd"><td><p>旧版</p></td>
+<td><p>Software タブ</p></td>
+<td><p>2014/05/16</p></td>
+<td><p>Data Logger Software(zip) と、その下のマニュアルをダウンロードします。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>使い勝手<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>面倒なパラメータの設定は必用ありません。
+CO2Mini をパソコンにつなげてソフトウェアを立ち上げれば、
+グラフ表示や記録がはじまります。</p>
+</div>
+<div class="section" id="id6">
+<h2>グラフ表示<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>グラフ表示の例を示します。データ記録同様にグラフ表示も直感的で、なかなか便利そうです。</p>
+<p>[Real Time Graph] を選ぶと、最新の CO2 と温度が 3 秒ごとに更新されます。
+[Cumulative Time Graph] を選ぶと、過去の任意の測定結果を参照できます(横軸の範囲は, 1時間～1カ月の中から選べる)。</p>
+<p><a class="reference internal" href="_images/co2mini_trend.jpg"><img alt="co2mini_trend" src="_images/co2mini_trend.jpg" style="width: 405.0px; height: 315.9px;" /></a></p>
+</div>
+<div class="section" id="id7">
+<h2>データ記録<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>CO2 と温度が 時刻タグ付きで記録されます。</p></li>
+<li><p>記録周期
+デフォルトでは 3 秒です。変更できるかどうか調べていません。</p></li>
+<li><p>保存先
+年/月/日.CSV というファイルに記録されます。
+年や月はフォルダで、存在しなければ自動的に作られます。
+日にちをまたぐと別のファイルに記録されます。</p></li>
+<li><p>ソフトの立ち上げ時や中断/再開時に、無効値が記録されます。</p></li>
+</ul>
+<p><a class="reference internal" href="_images/co2mini_logfile.jpg"><img alt="co2mini_logfile" src="_images/co2mini_logfile.jpg" style="width: 420.3px; height: 243.6px;" /></a></p>
+</div>
+<div class="section" id="id8">
+<h2>参考<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<dl class="citation">
+<dt class="label" id="ref-20"><span class="brackets"><a class="fn-backref" href="#id3">Ref:20</a></span></dt>
+<dd><p><a class="reference external" href="https://www.amazon.co.jp/Interface-%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9-2019%E5%B9%B4-09-%E6%9C%88%E5%8F%B7/dp/B07STB6P6F/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;dchild=1&amp;keywords=%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9+2019%2F09&amp;linkCode=qs&amp;qid=1606108697&amp;sourceid=Mozilla-search&amp;sr=8-1&amp;tag=mozillajapan-fx-22">漆谷正義, 光合成に不可欠なCO2センシングの研究, インターフェース(CQ出版), 2019-09, p.37</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="co2mon.html" title="CO2 モニター/ロガー (NDIR 方式)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, sken10.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>
