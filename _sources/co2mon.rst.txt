@@ -36,7 +36,7 @@
 NDIR センサー種別の欄に [] 付きで記入したものは、
 @triangle24 さんの CO2モニター比較の表 [Ref:2]_ の情報です。
 
-    表中の ABC は、Automatic Background Calibration のことです。
+    表中の ABC は、Automatic Background Calibration のことです (詳しくは後述)。
 
 データ保存なし　(PC/スマホとの連携なし)
 ---------------------------------------
@@ -47,7 +47,7 @@ NDIR センサー種別の欄に [] 付きで記入したものは、
     
     マーベル001, |gv_marbel001|, "17,000", SLDW, 不要 /なし, USB, "137, 96, 27", "工業用/農業用のCO2関連機器を手がける会社が、一般向けに販売した製品。細かい仕様も公表されている。"
     DGC-17, |gv_dgc_17|, "18,000", [DLDW], 不要 /手動, USB, "120, 91, 27", "グラフ表示/ 校正は手動ボタン"
-    カスタム CO2-mini, |gv_co2mini|, "11,000", [SLDW], ABC(8日毎)/once(8日後)/OFF, USB, "169, 42, 24", "CO2と温度を交互に表示。細身で持ち運び便利(モバイルバッテリは外付け)。"
+    カスタム CO2-mini, |gv_co2mini|, "11,000", [SLDW], ABC(8日毎)/once(8日後)/OFF, USB, "169, 42, 24", "CO2と温度を交互に表示。細身で持ち運び便利(モバイルバッテリは外付け)。データ保存可能(非公式,後述)"
 
 
 ..
@@ -130,22 +130,22 @@ CO2-mini(カスタム社)のPC連携機能は、メーカーが保障するも�
 
 参考
 ----
-.. [Ref:1]  `CO2モニターまとめ by Airbone空気感染. CO2 lt 800ppm. 換気 gt 6回/時(@AirborneKanki) さん
-  <https://twitter.com/i/events/1310959932724969473>`_
+.. [Ref:1]  `CO2モニターまとめ by @AirborneKanki さん
+  <https://twitter.com/i/events/1310959932724969473>`_ , 
   CO2モニターの他にも、空気感染に関連した情報がたくさんまとまっている。
 
-.. [Ref:2]  `コロナ対策・換気視覚化用CO2モニター
-  <https://togetter.com/li/1597808>`_
-  CO2モニター比較の表
+.. [Ref:2]  `コロナ対策・換気視覚化用CO2モニター by @music1984_20xx さん
+  <https://togetter.com/li/1597808>`_ , 
+  CO2モニター比較の表など、もりだくさん
  
 .. [Ref:3]  `CO2センサー、空気品質センサーの測定値を比較する
-  <https://ambidata.io/samples/temphumid/airqualitysensors/>`_
+  <https://ambidata.io/samples/temphumid/airqualitysensors/>`_ , 
   NDIR方式(MH-Z19B, S-300L-V3) と MOXガスセンサー(BME680, CCS811) で計測値を比較。
  
-.. [Ref:4]  `CO2センサー実測比較 連続ツイート by Airbone空気感染. CO2 lt 800ppm. 換気 gt 6回/時(@AirborneKanki) さん
-  <https://twitter.com/AirborneKanki/status/1295710465285332993>`_
+.. [Ref:4]  `CO2センサー実測比較 連続ツイート @AirborneKanki さん
+  <https://twitter.com/AirborneKanki/status/1295710465285332993>`_ , 
   色々な条件で 3 機種使って同時に計測した結果。
 
 .. [Ref:5]  `CO2-miniの通信が暗号化解除されていた (2020-10-19) by donadona さん
-  <https://donadona.hatenablog.jp/entry/2020/10/19/023049>`_
+  <https://donadona.hatenablog.jp/entry/2020/10/19/023049>`_ , 
   暗号化解除に対応したデータ取得ソフトも公開されている。
