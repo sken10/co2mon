@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>二酸化炭素モニターの計測値比較 (CO2-mini, HT-2000, MH-Z19B) &#8212; CO2 Monitor/Logger  documentation</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CO2-miini(カスタム社) とパソコンと連携" href="co2mini.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="co2mini.html" title="CO2-miini(カスタム社) とパソコンと連携"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="co2-mini-ht-2000-mh-z19b">
+<h1>二酸化炭素モニターの計測値比較 (CO2-mini, HT-2000, MH-Z19B)<a class="headerlink" href="#co2-mini-ht-2000-mh-z19b" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>条件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>24時間換気のない状態で、就寝中の CO2 濃度の上昇と、朝の窓開け換気を実施した。
+対象は、写真奥から HT-2000, CO2-mini, MHZ-19B(CO2-mini の上の金色の箱)。</p>
+<p><a class="reference internal" href="_images/cmp_config.jpg"><img alt="cmp_config" src="_images/cmp_config.jpg" style="width: 368.8px; height: 276.8px;" /></a></p>
+<p>校正について</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>機器</p></th>
+<th class="head"><p>校正</p></th>
+<th class="head"><p>説明</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CO2-mini</p></td>
+<td><p>OFF</p></td>
+<td><p>製品購入時の初期値は ABC(8日毎)。購入直後に校正を OFF した(工場出荷時の校正結果を保持していると期待)</p></td>
+</tr>
+<tr class="row-odd"><td><p>HT-2000</p></td>
+<td><p>ABC</p></td>
+<td><p>校正方法を変更できない。校正の周期は不明。</p></td>
+</tr>
+<tr class="row-even"><td><p>MH-Z19B</p></td>
+<td><p>ABC</p></td>
+<td><p>手動校正も選べるが、ABCのまま使っている。マニュアルには 24 hour 毎との記述があるが、常に最低値を 400ppm にしているかも。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="co2-mini-ht-2000">
+<h2>CO2-mini と HT-2000<a class="headerlink" href="#co2-mini-ht-2000" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>常に HT-2000 が低い値を示しており、両者の平行度は高い。</p></li>
+<li><p>値が大きい所でやや差が広がっている(スケールファクタが若干異なるか)。</p></li>
+<li><p>HT-2000 の ABC は抑止できないが、1日に一回しっかり外気を計測できるなら十分使えそう。</p></li>
+<li><p>別記事にまとめたが、HT-2000 の記録の使い勝手はあまり良くない(普通なのかもしれないけど)。</p></li>
+</ul>
+<p><a class="reference internal" href="_images/cmp_mini_ht.jpg"><img alt="cmp_mini_ht" src="_images/cmp_mini_ht.jpg" style="width: 480.0px; height: 320.0px;" /></a></p>
+</div>
+<div class="section" id="co2-mini-mh-z19b">
+<h2>CO2-mini と MH-Z19B<a class="headerlink" href="#co2-mini-mh-z19b" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/cmp_mini_mhz.jpg"><img alt="cmp_mini_mhz" src="_images/cmp_mini_mhz.jpg" style="width: 480.0px; height: 320.0px;" /></a></p>
+<ul class="simple">
+<li><p>差は、最大で 200ppm。</p></li>
+<li><p>差が変動しているので、校正や事後のバイアス補正では解決しない。</p></li>
+<li><p>今回の計測だけでは、特性についてはっきりしたことは言えない。</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>総合評価<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>co2-mini と HT-2000 の動きは一定のバイアスを除くとよく一致する。それにた
+いして、MH-Z19B の差は時間によって変動している。応答速度の差では説明でき
+ないので、MH-Z19B 側の問題と思われる。1 個体しか調べていないので、個体差
+(あたり/はずれ)かもしれない。MH-Z19B がダメというわけではなく、換気の目
+安としてならじゅぶん使えるレベルと思う(安価なセンサーだし)。</p>
+<p>上で気にしている応答速度の差は、例えば筐体に開いている穴のサイズの違いに
+よる雰囲気の取り込みやすさの違いなどです。</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="co2mini.html" title="CO2-miini(カスタム社) とパソコンと連携"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, sken10.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>
