@@ -10,6 +10,9 @@
 .. |cmp_mini_mhz| image:: ./img/cmp_mini_mhz.jpg
     :scale: 80
 
+.. |cmp_ht2000_bb| image:: ./img/cmp_ht2000_bb.jpg
+    :scale: 40
+
 条件
 ----
 
@@ -58,3 +61,20 @@ co2-mini と HT-2000 の動きは一定のバイアスを除くとよく一致�
 
 上で気にしている応答速度の差は、例えば筐体に開いている穴のサイズの違いに
 よる雰囲気の取り込みやすさの違いなどです。
+
+
+おまけ
+======
+
+HT-2000 の CO2 センサー
+-----------------------
+
+HT-2000 の CO2 センサーは Sensair S8 でした。
+このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) [Ref:30]_ 。
+解説記事によると、ABC の校正周期は 8日です。計測値の急激な変化をさけるため、一回当た
+りの校正量に制限を設けて、徐々に合わせるみたいです。
+
+|cmp_ht2000_bb|
+
+.. [Ref:30]  `センスエアABCアルゴリズム
+  <http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html>`_
