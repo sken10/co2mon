@@ -86,7 +86,7 @@ HT-2000 の CO2 センサー
 
 |cmp_ht2000_bb|
 
-HT-2000 の CO2 センサーは Sensair S8 でした。
+HT-2000 の CO2 センサーは Sensair S8 でした(右端の四角い部品)。
 このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) [Ref:30]_ 。
 解説記事によると、ABC の校正周期は 8日です。計測値の急激な変化をさけるため、一回当た
 りの校正量に制限を設けて、徐々に合わせるみたいです。
@@ -98,12 +98,15 @@ MH-Z19B について
 
 |cmp_mhz19b|
 
-MH-Z19B はセンサー単体で売られているものです(1個 2～4千円)。
+MH-Z19B はセンサー単体で売られているものです(1個 2～4千円) [Ref:31]_ 。
 パソコンで計測する場合は、USB/TTLシリアル変換(千円くらい)を介して接続します。
-UART(シリアル通信)の読み書きだけで CO2 を(わりと正しく)計測できます。
+UART(シリアル通信)の読み書きだけで、わりと正しい CO2 を取得できます。
 
 参考
 ====
 
 .. [Ref:30]  `センスエアABCアルゴリズム
-  <http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html>`_
+    <http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html>`_
+
+.. [Ref:31]  `Intelligent Infrared CO2 Module(Model: MH-Z19B)
+    <https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19b-co2-ver1_0.pdf>`_
