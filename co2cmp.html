@@ -106,32 +106,43 @@
 <p>上で気にしている応答速度の差は、例えば筐体に開いている穴のサイズの違いに
 よる雰囲気の取り込みやすさの違いなどです。</p>
 </div>
-</div>
 <div class="section" id="id4">
-<h1>おまけ<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<h2>温度補償<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/temp_compensation.png"><img alt="temp_compensation" src="_images/temp_compensation.png" style="width: 548.0px; height: 427.20000000000005px;" /></a></p>
+<p>グラフは、外気(約 400ppm)を計測したあと、センサーを室内に移動した時の様子です。
+co2-mini と MH-Z19B のどちらも自動校正は OFF です。
+co2-mini も MH-Z19B のどちらの計測値も、値が不連続にジャンプしているところがあります。
+温度補償が働いているのかなぁと思っていますが、よく分かりません。</p>
+<p>余談。外気を計測するときは、ほぼぴたりとあっているのですが、
+室内にもちこむと 100ppm くらいの差が生じてしまって残念な感じです。
+スケールファクターの違いというよりは、温度補償の性能の差を疑っています。</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h1>おまけ<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ht-2000-co2">
 <h2>HT-2000 の CO2 センサー<a class="headerlink" href="#ht-2000-co2" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="_images/cmp_ht2000_bb.jpg"><img alt="cmp_ht2000_bb" src="_images/cmp_ht2000_bb.jpg" style="width: 368.8px; height: 276.8px;" /></a></p>
 <p>HT-2000 の CO2 センサーは Sensair S8 でした(右端の四角い部品)。
-このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) <a class="reference internal" href="#ref-30" id="id5"><span>[Ref:30]</span></a> 。
+このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) <a class="reference internal" href="#ref-30" id="id6"><span>[Ref:30]</span></a> 。
 解説記事によると、ABC の校正周期は 8日です。計測値の急激な変化をさけるため、一回当た
 りの校正量に制限を設けて、徐々に合わせるみたいです。</p>
 </div>
 <div class="section" id="mh-z19b">
 <h2>MH-Z19B について<a class="headerlink" href="#mh-z19b" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="_images/cmp_mhz19b.jpg"><img alt="cmp_mhz19b" src="_images/cmp_mhz19b.jpg" style="width: 368.8px; height: 276.8px;" /></a></p>
-<p>MH-Z19B はセンサー単体で売られているものです(1個 2～4千円) <a class="reference internal" href="#ref-31" id="id6"><span>[Ref:31]</span></a> 。
+<p>MH-Z19B はセンサー単体で売られているものです(1個 2～4千円) <a class="reference internal" href="#ref-31" id="id7"><span>[Ref:31]</span></a> 。
 パソコンで計測する場合は、USB/TTLシリアル変換(千円くらい)を介して接続します。
 UART(シリアル通信)の読み書きだけで、わりと正しい CO2 を取得できます。</p>
 </div>
 </div>
-<div class="section" id="id7">
-<h1>参考<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id8">
+<h1>参考<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h1>
 <dl class="citation">
-<dt class="label" id="ref-30"><span class="brackets"><a class="fn-backref" href="#id5">Ref:30</a></span></dt>
+<dt class="label" id="ref-30"><span class="brackets"><a class="fn-backref" href="#id6">Ref:30</a></span></dt>
 <dd><p><a class="reference external" href="http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html">センスエアABCアルゴリズム</a></p>
 </dd>
-<dt class="label" id="ref-31"><span class="brackets"><a class="fn-backref" href="#id6">Ref:31</a></span></dt>
+<dt class="label" id="ref-31"><span class="brackets"><a class="fn-backref" href="#id7">Ref:31</a></span></dt>
 <dd><p><a class="reference external" href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19b-co2-ver1_0.pdf">Intelligent Infrared CO2 Module(Model: MH-Z19B)</a></p>
 </dd>
 </dl>
