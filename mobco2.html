@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <title>モバイル CO2 マネージャー &#8212; CO2 Monitor/Logger  documentation</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="二酸化炭素モニターの計測値比較 (CO2-mini, HT-2000, MH-Z19B)" href="co2cmp.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="co2cmp.html" title="二酸化炭素モニターの計測値比較 (CO2-mini, HT-2000, MH-Z19B)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="co2">
+<h1>モバイル CO2 マネージャー<a class="headerlink" href="#co2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>2021年5月に TOAMIT (東亜産業) から発売された 「モバイルCO2マネージャやー」
+の情報です。直営店だと 8500円、yodobashi.com だと 7000円くらいです。
+製品情報は <a class="reference internal" href="#ref-40" id="id2"><span>[Ref:40]</span></a> 。</p>
+</div>
+<div class="section" id="id3">
+<h2>精度<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>CO2-mini との単発の比較です。NDIR を使っているだけあってよく一致しています。
+1800ppm の時は差が大きめですが、家庭用としては十分実用的と思います。
+左 (453ppm, 448ppm), 右 (1868ppm, 1805ppm)</p>
+<p><a class="reference internal" href="_images/mobco2_400.jpg"><img alt="mobco2_400" src="_images/mobco2_400.jpg" style="width: 276.59999999999997px; height: 207.6px;" /></a>
+<a class="reference internal" href="_images/mobco2_1800.jpg"><img alt="mobco2_1800" src="_images/mobco2_1800.jpg" style="width: 276.59999999999997px; height: 207.6px;" /></a></p>
+</div>
+<div class="section" id="id4">
+<h2>良い点<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>NIDR 方式としては安価 (7000円)</p></li>
+<li><p>小型軽量 (78g)</p></li>
+<li><p>画面も見やすい</p></li>
+<li><p>校正は手動校正のみ (取説に自動校正の記述はない)</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>悪い点<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>バッテリーの持ちが悪い (フル充電で 20時間。常時バックライト + 2秒更新が原因か?)</p></li>
+<li><p>手動校正は、ボタンを押す回数が多くて煩雑</p></li>
+<li><dl class="simple">
+<dt>校正方法に関する記述が不親切。</dt><dd><p>「換気の良い場所に置いて手動で構成」とあるが、
+外気を取り込むために必要な待ち時間や、操作者の呼気を避ける工夫などへの言及がない。</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>特記事項<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ON したあと 10 分で電源が切れる。延長は可能だが、チャンスは 10分経過して画面が消えた10秒間だけ。</p></li>
+<li><p>充電しながら計測できるが、その時も 10分で電源が切れる</p></li>
+<li><p>自分の呼気を計測してしまう人が多そう。</p></li>
+<li><p>なるべく正確に測る方法とか紹介があっても良いと思う
+二酸化炭素の発生源(人,動物,ビール,コンロ,etc)から 1.5m 離して、5 分放置するとか。</p></li>
+<li><p>むやみに手動校正して不正確な計測結果を出す可能性も。</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>余談(不確実)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>センサーモジュールとしては自動校正が ON のままかもしれない
+(10分で電源が切れるので、1～2週間周期の自動校正がかからないだけとか)。</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>なるべく正しく計測するには<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>CO2 発生源(人,動物,ビール,コンロ) から 1.5 m 離して設置</p></li>
+<li><p>電源を ON したら、計測値が落ち着くのを待つ(5分くらい?)。</p></li>
+<li><p>簡単なスマホスタンド(外気取り入れ口を塞がないもの)があると便利かも</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>参考<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<dl class="citation">
+<dt class="label" id="ref-40"><span class="brackets"><a class="fn-backref" href="#id2">Ref:40</a></span></dt>
+<dd><p><a class="reference external" href="https://toamit.jp/products/precision-machine/toa-co2mg-003-mb/">モバイル CO2 Manager TOAMIT, 直営Online SHop</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="co2cmp.html" title="二酸化炭素モニターの計測値比較 (CO2-mini, HT-2000, MH-Z19B)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CO2 Monitor/Logger  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, sken10.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>

@@ -13,6 +13,7 @@ COVID-19 換気は大事
    /co2mon.rst
    /co2mini.rst
    /co2cmp.rst
+   /mobco2.rst
 
 
 連絡先
