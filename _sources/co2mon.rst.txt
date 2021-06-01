@@ -31,10 +31,14 @@
 .. |gv_snowinspring| image:: ./img/gv_snowinspring.jpg
     :scale: 22
 
+こちらの情報は 2020年12月頃のものです。CO2モニターの最新の動向は
+[Ref:7]_ が詳しいです。
+
 @airbornekanki さんがまとめてくれたCO2 モニター/ロガーの情報 [Ref:1]_ を表にしました。
 NDIR センサー種別の欄に [] 付きで記入したものは、
 @triangle24 さんの CO2モニター比較の表 [Ref:2]_ の情報です。
 価格は、今より入荷しやすかった頃のものです。
+
 
     表中の ABC は、Automatic Background Calibration のことです (詳しくは後述)。
 
@@ -155,3 +159,6 @@ CO2-mini(カスタム社)のPC連携機能は、メーカーが保障するも�
 
 .. [Ref:6]  `センスエアABCアルゴリズム
   <http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html>`_
+
+.. [Ref:7]  `CO2モニター製品比較表
+  <https://covidco2jp.wordpress.com/2021/01/17/co2/>`_

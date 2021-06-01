@@ -7,7 +7,7 @@ COVID-19 換気は大事
 ===================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    /co2mon.rst

@@ -122,28 +122,28 @@ co2-mini も MH-Z19B のどちらの計測値も、値が不連続にジャン�
 スケールファクターの違いというよりは、温度補償の性能の差を疑っています。</p>
 </div>
 </div>
-<div class="section" id="id5">
-<h1>おまけ<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ht-2000-co2-mh-z19b">
+<h1>おまけ(HT-2000 の CO2 センサー/MH-Z19B校正モード取得方法)<a class="headerlink" href="#ht-2000-co2-mh-z19b" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ht-2000-co2">
 <h2>HT-2000 の CO2 センサー<a class="headerlink" href="#ht-2000-co2" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="_images/cmp_ht2000_bb.jpg"><img alt="cmp_ht2000_bb" src="_images/cmp_ht2000_bb.jpg" style="width: 368.8px; height: 276.8px;" /></a></p>
 <p>HT-2000 の CO2 センサーは Sensair S8 でした(右端の四角い部品)。
-このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) <a class="reference internal" href="#ref-30" id="id6"><span>[Ref:30]</span></a> 。
+このセンサーの ABC アルゴリズムの解説記事はこちら (動画あり) <a class="reference internal" href="#ref-30" id="id5"><span>[Ref:30]</span></a> 。
 解説記事によると、ABC の校正周期は 8日です。計測値の急激な変化をさけるため、一回当た
 りの校正量に制限を設けて、徐々に合わせるみたいです。</p>
 </div>
 <div class="section" id="mh-z19b">
 <h2>MH-Z19B について<a class="headerlink" href="#mh-z19b" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="_images/cmp_mhz19b.jpg"><img alt="cmp_mhz19b" src="_images/cmp_mhz19b.jpg" style="width: 368.8px; height: 276.8px;" /></a></p>
-<div class="section" id="id7">
-<h3>概要<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<p>MH-Z19B はセンサー単体で売られているものです(1個 2～4千円) <a class="reference internal" href="#ref-31" id="id8"><span>[Ref:31]</span></a> 。
+<div class="section" id="id6">
+<h3>概要<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>MH-Z19B はセンサー単体で売られているものです(1個 2～4千円) <a class="reference internal" href="#ref-31" id="id7"><span>[Ref:31]</span></a> 。
 パソコンで計測する場合は、USB/TTLシリアル変換(千円くらい)を介して接続します。
 UART(シリアル通信)の読み書きだけで、わりと正しい CO2 を取得できます。</p>
 </div>
-<div class="section" id="id9">
-<h3>校正モードの取得<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<p>自動校正が有効かどうかを知る方法は <a class="reference internal" href="#ref-32" id="id10"><span>[Ref:32]</span></a> で見つけました。公式のマニ
+<div class="section" id="id8">
+<h3>校正モードの取得<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>自動校正が有効かどうかを知る方法は <a class="reference internal" href="#ref-32" id="id9"><span>[Ref:32]</span></a> で見つけました。公式のマニ
 ュアルには載っていないので、ファームのバージョンが違うと動かない可能性は
 あります。このページには、センサーの受信光量を取得するコマンドも掲載され
 ています。MH-Z19B が使用している ABC ロジックや温度補償は不明な点が多い
@@ -151,20 +151,20 @@ UART(シリアル通信)の読み書きだけで、わりと正しい CO2 を取
 せん。</p>
 </div>
 </div>
-</div>
-<div class="section" id="id11">
-<h1>参考<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id10">
+<h2>参考<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <dl class="citation">
-<dt class="label" id="ref-30"><span class="brackets"><a class="fn-backref" href="#id6">Ref:30</a></span></dt>
+<dt class="label" id="ref-30"><span class="brackets"><a class="fn-backref" href="#id5">Ref:30</a></span></dt>
 <dd><p><a class="reference external" href="http://senseair.jp/knowledge/sensor_technology/senseair_abc_algorithm.html">センスエアABCアルゴリズム</a></p>
 </dd>
-<dt class="label" id="ref-31"><span class="brackets"><a class="fn-backref" href="#id8">Ref:31</a></span></dt>
+<dt class="label" id="ref-31"><span class="brackets"><a class="fn-backref" href="#id7">Ref:31</a></span></dt>
 <dd><p><a class="reference external" href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19b-co2-ver1_0.pdf">Intelligent Infrared CO2 Module(Model: MH-Z19B)</a></p>
 </dd>
-<dt class="label" id="ref-32"><span class="brackets"><a class="fn-backref" href="#id10">Ref:32</a></span></dt>
+<dt class="label" id="ref-32"><span class="brackets"><a class="fn-backref" href="#id9">Ref:32</a></span></dt>
 <dd><p><a class="reference external" href="https://revspace.nl/MH-Z19B">RevSpace / MH-Z19B</a></p>
 </dd>
 </dl>
+</div>
 </div>
 
 
